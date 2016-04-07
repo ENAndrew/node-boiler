@@ -1,6 +1,6 @@
 # node-boiler
 
-```npm install ```
-```mongod```
-```mongo``` 
-```npm start ```
+```npm install
+mongod
+mongo 
+npm start ```
