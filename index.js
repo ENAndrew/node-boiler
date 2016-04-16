@@ -20,7 +20,7 @@ router.route('/users')
     var user = new User();
     console.log(req.body)
     //data comes through as the req.body so format it accordingly.
-    user.username = req.body.username;
+    user.name = req.body.name;
     user.password = req.body.password;
     user.company = req.body.company;
     user.password2 = req.body.password2;

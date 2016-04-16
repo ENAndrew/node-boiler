@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html ng-app="boilerApp">
+    <head>
+        <title>Node Boiler</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body ng-controller="boilerController">
+        
+        <div class="formWrapper">
+            
+            <h2>You need to log in: </h2>
+            
+            <form>
+                
+                <label for="name">Name: </label>
+                <input type="text" name="name" ng-model="name">
+                <br><br>
+                
+                <label for="company">Company: </label>
+                <input type="text" name="company" ng-model="company">
+                <br><br>
+                
+                <label for="email">Email: </label>
+                <input type="email" name="email" ng-model="email">
+                <br><br>
+                
+                <label for="password">Password: </label>
+                <input type="text" name="password" ng-model="password">
+                <br><br>
+                
+                <label for="password2">Type Password Again: </label>
+                <input type="text" name="password2" ng-model="password2">
+                <br><br>
+                
+                <button type="submit" ng-click="login(name, company, email, password, password2)">Submit</button>
+
+            </form>
+    
+        </div>
+        
+        <div class="listWrapper">
+            <h4>Current Users</h4>
+            <ul ng-repeat="user in users">
+                <li>Name: {{user.name}}</li>
+                <li>Company:  {{user.company}}</li>
+            </ul>
+        </div>
+        
+        
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+        <script src="app/app.js" type="text/javascript"></script>
+        <script src="app/boiler.controller.js" type="text/javascript"></script>
+        <script src="app/boiler.service.js" type="text/javascript"></script>
+    </body>
+</html>

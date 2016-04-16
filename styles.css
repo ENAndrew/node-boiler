@@ -1,0 +1,14 @@
+
+.formWrapper {
+    margin: 60px;
+    border: 1px solid black;
+    width: 500px;
+}
+
+form {
+    padding: 30px;
+}
+
+h2 {
+    text-align: center;
+}
